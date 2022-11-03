@@ -1,3 +1,48 @@
+## How To Run
+
+<p align="justify">Below are the instruction on how to run this project</p>
+
+<p align="justify">Clone the project and open it into a code editor of your choice (VS Code, Sublime Text, Atom etc.)</p>
+
+<p align="justify">Run below commands to run the project</p>
+
+<hr>
+
+<p align="justify">First install the composer packages & dependencies</p>
+
+```
+composer install
+```
+
+<p align="justify">Copy contents of `.env.example` to `.env`</p>
+
+```
+cp .env.example .env
+```
+
+```
+php artisan key:generate
+```
+
+<p align="justify">Configure database details in the .env file, then run migrations & seed the database. The database migration may take a while to complete (approximately 10-15 minutes). So, please be patient.</p>
+
+```
+php artisan migrate:fresh --seed
+```
+
+<p align="justify">Run the below two commands into two separate terminal sessions</p>
+
+```
+npm install && npm run dev
+```
+
+```
+php artisan serve
+```
+
+<hr>
+
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
@@ -64,45 +109,3 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
-
-## How To Run
-
-<p align="justify">Below are the instruction on how to run this project</p>
-
-<p align="justify">Clone the project and open it into a code editor of your choice (VS Code, Sublime Text, Atom etc.)</p>
-
-<p align="justify">Run below commands to run the project</p>
-
-<hr>
-
-<p align="justify">First install the composer packages & dependencies</p>
-
-```
-composer install
-```
-
-<p align="justify">Copy contents of `.env.example` to `.env`</p>
-
-```
-cp .env.example .env
-```
-
-```
-php artisan key:generate
-```
-
-<p align="justify">Configure database details in the .env file, then run migrations & seed the database. The database migration may take a while to complete (approximately 10-15 minutes). So, please be patient.</p>
-
-```
-php artisan migrate:fresh --seed
-```
-
-<p align="justify">Run the below two commands into two separate terminal sessions</p>
-
-```
-npm install && npm run dev
-```
-
-```
-php artisan serve
-```
