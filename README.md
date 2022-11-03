@@ -94,7 +94,7 @@ php artisan key:generate
 <p align="justify">Configure database details in the .env file, then run migrations & seed the database</p>
 
 ```
-php artisan migrate --seed
+php artisan migrate:fresh --seed
 ```
 
 <p align="justify">Run the below two commands into two separate terminal sessions</p>
