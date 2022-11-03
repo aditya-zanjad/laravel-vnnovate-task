@@ -91,7 +91,7 @@ cp .env.example .env
 php artisan key:generate
 ```
 
-<p align="justify">Configure database details in the .env file, then run migrations & seed the database</p>
+<p align="justify">Configure database details in the .env file, then run migrations & seed the database. The database migration may take a while to complete (approximately 10-15 minutes). So, please be patient.</p>
 
 ```
 php artisan migrate:fresh --seed
