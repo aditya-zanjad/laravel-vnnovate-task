@@ -64,3 +64,45 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+## How To Run
+
+<p align="justify">Below are the instruction on how to run this project</p>
+
+<p align="justify">Clone the project and open it into a code editor of your choice (VS Code, Sublime Text, Atom etc.)</p>
+
+<p align="justify">Run below commands to run the project</p>
+
+<hr>
+
+<p align="justify">First install the composer packages & dependencies</p>
+
+```
+composer install
+```
+
+<p align="justify">Copy contents of `.env.example` to `.env`</p>
+
+```
+cp .env.example .env
+```
+
+```
+php artisan key:generate
+```
+
+<p align="justify">Configure database details in the .env file, then run migrations & seed the database</p>
+
+```
+php artisan migrate --seed
+```
+
+<p align="justify">Run the below two commands into two separate terminal sessions</p>
+
+```
+npm install && npm run dev
+```
+
+```
+php artisan serve
+```
