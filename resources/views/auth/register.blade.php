@@ -112,7 +112,7 @@
                                         </label>
                                         <select id="city" name="city_id"
                                             class="form-control select2" style="width: 100%;" required>
-                                            <option selected disabled></option>
+                                            <option disabled></option>
                                             @foreach ($cities as $city)
                                                 @php
                                                     // If the old value of 'city_id' matches with the '$city->id',
